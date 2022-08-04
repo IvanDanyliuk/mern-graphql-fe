@@ -8,7 +8,6 @@ const ClientRow = ({ client }) => {
     DELETE_CLIENT, 
     {
       variables: { id: client.id },
-      // refetchQueries: [{ query: GET_CLIENTS }],
       update(cache, { data: { deleteClient } }) {
         const { clients } = cache.readQuery({ query: GET_CLIENTS });
         cache.writeQuery({
