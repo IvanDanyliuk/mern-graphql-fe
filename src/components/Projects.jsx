@@ -1,7 +1,7 @@
-import Spinner from "./Spinner";
-import { useQuery } from "@apollo/client";
-import ProjectCard from "./ProjectCard";
-import { GET_PROJECTS } from "./queries/projectQueries";
+import Spinner from './Spinner';
+import { useQuery } from '@apollo/client';
+import ProjectCard from './ProjectCard';
+import { GET_PROJECTS } from './queries/projectQueries';
 
 
 const Projects = () => {
@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <>
       {data.projects.length > 0 ? (
-        <div className="row mt-5">
+        <div className='row mt-5'>
           {data.projects.map(project => (
             <ProjectCard 
               key={project.id} 
@@ -25,7 +25,7 @@ const Projects = () => {
         <p>No projects</p>
       )}
     </>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

@@ -81,30 +81,30 @@ const AddClientModal = () => {
                 </div>
                 <div className='modal-body'>
                   <form onSubmit={handleSubmit}>
-                    <div className="mb-3">
-                      <label className="form-label">Name</label>
+                    <div className='mb-3'>
+                      <label className='form-label'>Name</label>
                       <input 
-                        type="text" 
-                        className="form-control" 
+                        type='text' 
+                        className='form-control' 
                         id='name' 
                         value={name} 
                         onChange={(e) => setName(e.target.value)} 
                       />
                     </div>
-                    <div className="mb-3">
-                      <label className="form-label">Description</label>
+                    <div className='mb-3'>
+                      <label className='form-label'>Description</label>
                       <textarea 
-                        className="form-control" 
+                        className='form-control' 
                         id='description' 
                         value={description} 
                         onChange={(e) => setDescription(e.target.value)} 
                       />
                     </div>
-                    <div className="mb-3">
-                      <label className="form-label">Status</label>
+                    <div className='mb-3'>
+                      <label className='form-label'>Status</label>
                       <select 
-                        id="status" 
-                        className="form-select" 
+                        id='status' 
+                        className='form-select' 
                         value={status} 
                         onChange={(e) => setStatus(e.target.value)}
                       >
@@ -116,8 +116,8 @@ const AddClientModal = () => {
                     <div className='mb-3'>
                       <label className='form-label'>Client</label>
                       <select 
-                        id="clientId" 
-                        className="form-select" 
+                        id='clientId' 
+                        className='form-select' 
                         value={clientId} 
                         onChange={(e) => setClientId(e.target.value)}
                       >
@@ -132,7 +132,7 @@ const AddClientModal = () => {
                     <button 
                       type='submit' 
                       data-bs-dismiss='modal'
-                      className="btn btn-primary"
+                      className='btn btn-primary'
                     >
                       Submit
                     </button>
